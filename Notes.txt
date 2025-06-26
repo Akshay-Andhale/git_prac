@@ -1,0 +1,40 @@
+GIT PULL : 
+
+-git pull is shorthand for two commands:
+
+git fetch
+git merge
+-If you're on akshay branch and you run 'git pull'
+It will:
+1)Fetch the latest updates from origin/akshay
+2)Merge them into your local akshay branch
+
+That why we do git pull origin main.
+
+-git pull origin main /  git pull origin master is it same?
+-->Only one of main or master usually exists — use the one your project uses as the default branch.
+
+GIT FETCH : 
+
+Command			What it Does					Merges Changes?
+git fetch	Downloads changes from remote without applying them	❌ No
+git pull	Downloads and merges changes into your current branch	✅ Yes
+
+- git fetch origin (Just fetches the latest info)
+Contacts the remote (origin)
+Gets all new commits and branches
+Does not touch your working files
+You’ll still be on your current branch with no changes applied
+
+🧠 Think of it as:
+“Go check what’s new on the server, but don’t touch my local work.
+
+--Common Use Case Example
+You're on branch akshay, and want to see what's new in origin/main:
+
+git fetch origin              # fetches updates from remote
+git diff origin/main         # shows what's different between your current branch and remote main
+Then if it looks good:
+git merge origin/main        # apply the changes to your branch
+
+
