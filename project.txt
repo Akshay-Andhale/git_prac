@@ -10,3 +10,6 @@ Function (Bedant):
     Line 1
     Line 2
 
+function main():
+    line m1
+    line m2
