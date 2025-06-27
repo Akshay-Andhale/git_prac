@@ -38,3 +38,18 @@ Then if it looks good:
 git merge origin/main        # apply the changes to your branch
 
 
+----------------------------------------------
+
+I was on branch bedant. Then imanually added one file sample.txt inside same folder where my project is placed. I can see that text file in bedant. But when i switched to main, there as well I can see the text file. How?
+-->
+An untracked file is any file in your folder that:
+Is not staged
+Is not committed
+Is not known to Git yet
+
+-Git only switches the tracked/committed files when changing branches.
+So:
+If a file is untracked → stays visible in all branches
+If a file is committed to a branch → only appears in that branch (unless merged or cherry-picked)
+
+-----------------------------------------
