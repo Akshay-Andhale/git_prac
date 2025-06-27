@@ -1,6 +1,12 @@
-Line 1
-Line 2
+Line 1 - a
+Line 2 - b
 Line 3
+
 Function (Akshay):
     Line 2
     Line 3
+    
+Function (Bedant):
+    Line 1
+    Line 2
+
